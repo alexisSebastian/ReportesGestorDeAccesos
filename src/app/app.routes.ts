@@ -1,15 +1,22 @@
 import { RouterModule, Routes } from '@angular/router';
-import { CuentasSiNUsoComponent } from './pages/cuentas-si-nuso/cuentas-si-nuso.component';
+import { CuentasSinUsoComponent } from './pages/cuentas-sin-uso/cuentas-sin-uso.component';
 import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
+    // se separa las rutas del dashboard del login
+    {
+        path: '',
+        component: PagesComponent,
+        children: [
+            {path: 'cuentas-sin-uso', component: CuentasSinUsoComponent },
+            {path: '', redirectTo: '/cuentas-sin-uso', pathMatch: 'full' }
+        ]
+     },
 
-    {path: 'cuentas-sin-uso', component: CuentasSiNUsoComponent },
     {path: 'login', component: LoginComponent },
     {path: 'register', component: LoginComponent },
-    {path: '', redirectTo: '/cuentas-sin-uso', pathMatch: 'full' },
-
     {path: '**', component: NopagefoundComponent },
 ];
 
