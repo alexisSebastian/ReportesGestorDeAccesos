@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
+// Modulos
+import { PagesModule } from './pages/pages.module';
+
+
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -14,22 +18,26 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NopagefoundComponent,
     LoginComponent,
-    CuentasSinUsoComponent,
-    HeaderComponent,
-    SidenavComponent,
-    BreadcrumbsComponent,
-    PagesComponent
+    RegisterComponent
+    // NopagefoundComponent,
+    // CuentasSinUsoComponent,
+    // HeaderComponent,
+    // SidenavComponent,
+    // BreadcrumbsComponent,
+    // PagesComponent,
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

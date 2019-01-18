@@ -1,0 +1,63 @@
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue darken-4">
+                <a href="#!" class="brand-logo center fontRobotoR" id="tituloLogin"> Nuevo Usuario </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<section>
+    <div class="section">
+        <div class="container center">
+            <div class="z-depth-3 grey lighten-4 row" style="display: inline-block; padding: 20px 48px 0px 48px; border: 1px solid #EEE;">
+                <form method="post" class="col s12" id="formularioReg">
+                    <div class="row">
+                        <div class="col s12">
+                            <i class="material-icons medium">
+                          add_circle
+                      </i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">person</i>
+                            <input id="userName" type="text" class="validate" name="userName" />
+                            <!--required-->
+                            <label for="userName">Nombre de usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id='pass' type='password' class='validate' name='pass' />
+                            <!--required-->
+                            <label for="pass">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id='mail' type='email' class='validate' name='mail' />
+                            <!--required-->
+                            <label for="mail">Correo electrónico</label>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="col s6">
+                            <input type="hidden" id="tipo" value="crear">
+                            <button type='submit' name='btn_new' class='btn btn-small col s12 waves-effect green darken-4 btnRedondo'>Crear</button>
+                        </div>
+                        <div class="col s6">
+                            <a href="index.php" class="btn btn-small col s12 waves-effect  red accent-4 btnRedondo">Regresar</a>
+                            <!-- <button type='submit' name='btn_back' class='btn btn-small col s12 waves-effect red accent-4'>Regresar</button> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

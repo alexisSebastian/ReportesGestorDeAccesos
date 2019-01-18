@@ -3,19 +3,18 @@
     src: url(../../assets/fonts/Roboto-Regular.ttf);
 }
 
+
+.fontRobotoR{
+    font-family: roboto;
+}
+
+
 header {
     margin-bottom: 3%;
 }
 
-section button#login {
-    font-family: roboto;
-}
-
 section form {
     padding-bottom: 5%;
-}
-.fontRobotoR{
-    font-family: roboto;
 }
 
 .btnRedondo {
