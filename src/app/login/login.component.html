@@ -1,47 +1,49 @@
 <header>
-  <div class="navbar-fixed">
-      <nav>
-          <div class="nav-wrapper blue darken-4">
-              <a href="#!" class="brand-logo center fontRobotoR" id="tituloLogin"> Login</a>
-          </div>
-      </nav>
-  </div>
+    <div class="navbar-fixed col s12">
+        <nav>
+            <div class="nav-wrapper blue darken-4">
+                <a href="#!" class="brand-logo center fontRobotoR" id="tituloLogin"> Login</a>
+            </div>
+        </nav>
+    </div>
 </header>
 <section>
-<div class="section">
-      <div class="container center">
-          <div class="z-depth-3 grey lighten-4 row" style="display: inline-block; padding: 20px 48px 0px 48px; border: 1px solid #EEE;">
-              <form method="post" class="col s12" id="formularioLogin">
-                  <div class="row">
-                      <div class="col s12">
-                          <i class="material-icons medium">
+    <div class="section">
+        <div class="container center">
+            <div class="z-depth-3 grey lighten-4 row" style="display: inline-block; padding: 20px 48px 0px 48px; border: 1px solid #EEE;">
+                <form method="post" class="col s12" id="formularioLogin">
+                    <div class="row">
+                        <div class="col s12">
+                            <i class="material-icons medium">
                               account_circle
                           </i>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="input-field col 6">
-                          <i class="material-icons prefix">person</i>
-                          <input id="userName" type="text" class="validate" name="user" /><!--required-->
-                          <label for="userName">Usuario</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="input-field col 6">
-                          <i class="material-icons prefix">lock</i>
-                          <input id='pass' type='password' class='validate' name='pass' /><!--required-->
-                          <label for="pass">Ingresa tu contraseña</label>
-                      </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                      <input type="hidden" id="tipo" value="login">
-                      <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo btnRedondo fontRobotoR' id="login">Iniciar Sesión<i class="material-icons right">send</i></button>
-                  </div>
-                  <div class="divider" tabindex="-1" style="margin: 20px 0;"></div>
-                  <a id="newAcount" href="nuevoUsuario.php">Crear cuenta</a><br>
-              </form>
-          </div>
-      </div>
-  </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col 6">
+                            <i class="material-icons prefix">person</i>
+                            <input id="userName" type="text" class="validate" name="user" />
+                            <!--required-->
+                            <label for="userName">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col 6">
+                            <i class="material-icons prefix">lock</i>
+                            <input id='pass' type='password' class='validate' name='pass' />
+                            <!--required-->
+                            <label for="pass">Ingresa tu contraseña</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="hidden" id="tipo" value="login">
+                        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo btnRedondo fontRobotoR' id="login">Iniciar Sesión<i class="material-icons right">send</i></button>
+                    </div>
+                    <div class="divider" tabindex="-1" style="margin: 20px 0;"></div>
+                    <a id="newAcount" routerLink="['register']">Crear cuenta</a><br>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
