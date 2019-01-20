@@ -1,23 +1,23 @@
 <!-- Se agregan los menu DropDown -->
-    <!-- -------------Manú dropdown web-------------------- -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="totalConexionesDia.php">Detalle de usuarios firmados del día</a></li>
-        <li class="divider"></li>
-        <li><a href="detalleConexionesDia.php">Detalle de conexiones del día</a></li>
-    </ul>
+<!-- -------------Manú dropdown web-------------------- -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a [routerLink]="['/detalle-usuarios']" routerLinkActive="active">Detalle de usuarios firmados del día</a></li>
+    <li class="divider"></li>
+    <li><a [routerLink]="['/detalle-conexiones']" routerLinkActive="active">Detalle de conexiones del día</a></li>
+</ul>
 
-    <ul id="dropdown2" class="dropdown-content">
-        <li><a href="totalUsuariosFirmadosDia.php">Distribución de conexiones del día por área</a></li>
-        <li class="divider"></li>
-        <li><a href="detalleUsuariosFirmadosDia.php">Distribución de usuarios firmados del día</a></li>
-    </ul>
+<ul id="dropdown2" class="dropdown-content">
+    <li><a [routerLink]="['/distribucion-conexiones']" routerLinkActive="active">Distribución de conexiones del día por área</a></li>
+    <li class="divider"></li>
+    <li><a [routerLink]="['/distribucion-usuarios']" routerLinkActive="active">Distribución de usuarios firmados del día</a></li>
+</ul>
 
-    <ul id="dropdown3" class="dropdown-content col s12">
-        <li><a href="graficaConecDiaArea.php">Cierre de accesos</a></li>
-    </ul>
+<ul id="dropdown3" class="dropdown-content col s12">
+    <li><a>Cierre de accesos</a></li>
+</ul>
 
-    <!-- -------------Menú dropdownMóbil------------------ -->
-    <!-- <ul id="dropdownM1" class="dropdown-content">
+<!-- -------------Menú dropdownMóbil------------------ -->
+<!-- <ul id="dropdownM1" class="dropdown-content">
         <li><a href="totalConexionesDia.php">Total de Conexiones del día</a></li>
         <li class="divider"></li>
         <li><a href="detalleConexionesDia.php">Detalle de conexiones del día</a></li>
@@ -56,15 +56,15 @@
                 </a><br>
             </div>
         </li>
-        <li><a href="index.php" id="TextoPrin">Cuentas sin uso (30 días)</a></li>
+        <li><a [routerLink]="[ '/cuentas-sin-uso' ]" routerLinkActive="active" id="TextoPrin">Cuentas sin uso (30 días)</a></li>
         <li class="divider"></li>
-        <li><a href="#!" id="TextoPrin">Usuarios y Sesiones por conexión</a></li>
+        <li><a [routerLink]="['/usuarios-sesiones']" routerLinkActive="active" id="TextoPrin">Usuarios y Sesiones por conexión</a></li>
         <li class="divider"></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="TextoPrin">Detalle de usuarios y sesiones<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown1" id="TextoPrin">Detalle de usuarios y sesiones<i class="material-icons right">arrow_drop_down</i></a></li>
         <li class="divider"></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="TextoPrin">Gráficas<i class="material-icons right">arrow_drop_down</i><i class="material-icons right">pie_chart</i></a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown2" id="TextoPrin">Gráficas<i class="material-icons right">arrow_drop_down</i><i class="material-icons right">pie_chart</i></a></li>
         <li class="divider"></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown3" id="TextoPrin">Plan H<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown3" id="TextoPrin">Plan H<i class="material-icons right">arrow_drop_down</i></a></li>
         <li class="divider"></li>
         <li><a href="#!" id="TextoPrin">Cerrar sesión</a></li>
         <li class="divider"></li>
